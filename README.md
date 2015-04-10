@@ -7,10 +7,10 @@ I've rewritten HelloWorldBRMSTest.java to connect over JMS to the kie-server run
 
 Some prerequisites:
 
-Install WildFly
-Install kie-server and kie-workbench into WildFly
-Import the quickstarts into the workbench
-Build and deploy helloworld-brms-kmodule project
-Configure helloworld-brms-kmodule as a container in the kie-server
-Update BPMS_USER and BPMS_PASSWORD to credentials configured for accessing the server
-Update BPMS_SERVER to the correct address
+* Install WildFly
+* Install kie-server and kie-workbench into WildFly
+* Import the quickstarts into the workbench
+* Build and deploy helloworld-brms-kmodule project
+* Configure helloworld-brms-kmodule as a container in the kie-server
+* Update BPMS_USER and BPMS_PASSWORD to credentials configured for accessing the server
+* Update BPMS_SERVER to the correct address
