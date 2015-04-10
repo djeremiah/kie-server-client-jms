@@ -51,9 +51,9 @@ import org.kie.server.client.KieServicesFactory;
  */
 public class HelloWorldBRMSTest {
 
-	private static final String BPMS_SERVER = "http://172.17.0.3:8080/kie-server";
+	private static final String BPMS_SERVER = "http://172.17.0.2:8080/kie-server";
 	private static final String BPMS_USER = "bpmsAdmin";
-	private static final String BPMS_PASSWORD = "SECRET";
+	private static final String BPMS_PASSWORD = "jbossadmin1!";
 
 	// A sale for a VIP customer
 	private static Sale vipSale;
@@ -170,7 +170,7 @@ public class HelloWorldBRMSTest {
 				"org.jboss.naming.remote.client.InitialContextFactory");
 		String jbossServerHostName = url.getHost();
 		initialProps.setProperty(InitialContext.PROVIDER_URL,
-				"http-remoting://" + jbossServerHostName + ":8080");
+				"remote://" + jbossServerHostName + ":4447");
 		initialProps.setProperty(InitialContext.SECURITY_PRINCIPAL, user);
 		initialProps.setProperty(InitialContext.SECURITY_CREDENTIALS, password);
 
